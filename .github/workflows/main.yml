@@ -25,9 +25,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v3
-      - name: Setup Terraform
+      - name: Terraform Hashicorp Setup
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 0.13.0 
