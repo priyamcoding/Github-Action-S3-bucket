@@ -1,4 +1,4 @@
-name: Github-workflow-to-automate-AWS-resources
+name: 'Github-workflow-to-automate-AWS-resources'
 
 # Controls when the workflow will run
 on:
