@@ -1,0 +1,1 @@
+bucketName = "priyam-s3-bucket-github-action"
