@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
 
 env: 
-    aws-region: us-east-1
+  aws-region: us-east-1
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
