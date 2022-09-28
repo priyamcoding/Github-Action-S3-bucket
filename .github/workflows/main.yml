@@ -26,7 +26,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Terraform Hashicorp Setup
         uses: hashicorp/setup-terraform@v2
         with:
@@ -34,11 +34,11 @@ jobs:
         
         - name: Configure AWS credentials from Test account
           uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
-          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
-          Aws-region: ${{env.aws-region}}
+          with:
+            aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+            aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+            aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
+            Aws-region: ${{env.aws-region}}
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
